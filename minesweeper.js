@@ -4,23 +4,49 @@ document.addEventListener('DOMContentLoaded', startGame)
 // Define your `board` object here!
 var board = {
 }
-board.cells = [{'a' : 0}, {'b' : 1}, {'c' : 2}, {'d' : 3}];
+board.cells = [{'a' : 0}, {'b' : 1}, {'c' : 2}, {'d' : 3}, {'e' : 4}, {'f' : 5},
+ {'g' : 6}, {'h' : 7}, {'i' : 8}];
+
 board.cells[0].row = 0;
 board.cells[1].row = 0;
-board.cells[2].row = 1;
+board.cells[2].row = 0;
 board.cells[3].row = 1;
+board.cells[4].row = 1;
+board.cells[5].row = 1;
+board.cells[6].row = 2;
+board.cells[7].row = 2;
+board.cells[8].row = 2;
+
 board.cells[0].col = 0;
 board.cells[1].col = 1;
-board.cells[2].col = 0;
-board.cells[3].col = 1;
+board.cells[2].col = 2;
+board.cells[3].col = 0;
+board.cells[4].col = 1;
+board.cells[5].col = 2;
+board.cells[6].col = 0;
+board.cells[7].col = 1;
+board.cells[8].col = 2;
+
 board.cells[0].isMine = true;
 board.cells[1].isMine = false;
 board.cells[2].isMine = true;
 board.cells[3].isMine = false;
-board.cells[0].hidden = !false
-board.cells[1].hidden = !false
-board.cells[2].hidden = !false
-board.cells[3].hidden = !false
+board.cells[4].isMine = true;
+board.cells[5].isMine = false;
+board.cells[6].isMine = true;
+board.cells[7].isMine = true;
+board.cells[8].isMine = false;
+
+
+board.cells[0].hidden = !false;
+board.cells[1].hidden = !false;
+board.cells[2].hidden = !false;
+board.cells[3].hidden = !false;
+board.cells[4].hidden = !false;
+board.cells[5].hidden = !false;
+board.cells[6].hidden = !false;
+board.cells[7].hidden = !false;
+board.cells[8].hidden = !false;
 
 
 function startGame () {
